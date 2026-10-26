@@ -3,7 +3,7 @@ import { SiteLayout, PageHero, SectionHeading, InfoCards, TestimonialCard, Enqui
 import { experiences } from "@/lib/experiences";
 import { img } from "@/lib/packages";
 
-export const Route = createFileRoute("/experiences/$category/")({
+export const Route = createFileRoute("/experiences/$category")({
   loader: ({ params }) => {
     const e = experiences.find((x) => x.slug === params.category);
     if (!e) throw notFound();

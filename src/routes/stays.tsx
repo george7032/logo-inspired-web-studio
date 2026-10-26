@@ -6,7 +6,7 @@ import { img, IMG, waLink } from "@/lib/packages";
 import { meta } from "@/lib/meta";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
-export const Route = createFileRoute("/stays/")({
+export const Route = createFileRoute("/stays")({
   head: () => meta("Lodges, Camps & Hotels in Kenya — Kridonelly Safaris", "We book vetted luxury tented camps, boutique hotels, eco-lodges and full-board vacation rentals across Kenya at the best rates."),
   component: Stays,
 });

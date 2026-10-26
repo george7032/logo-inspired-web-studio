@@ -7,7 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
-export const Route = createFileRoute("/tours/$slug/")({
+export const Route = createFileRoute("/tours/$slug")({
   loader: ({ params }) => {
     const p = packages.find((x) => x.slug === params.slug);
     if (!p) throw notFound();

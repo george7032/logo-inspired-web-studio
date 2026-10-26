@@ -5,7 +5,7 @@ import { SocialLinks } from "@/components/SocialLinks";
 import { img, IMG, waLink, PHONE, EMAIL, EMAIL_TO } from "@/lib/packages";
 import { meta } from "@/lib/meta";
 
-export const Route = createFileRoute("/contact/")({
+export const Route = createFileRoute("/contact")({
   head: () => meta("Contact Kridonelly Safaris — Nairobi, Kenya", "Call or WhatsApp +254 799 034311 or send us an enquiry. Our Nairobi team replies within 24 hours."),
   component: Contact,
 });

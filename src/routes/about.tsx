@@ -4,7 +4,7 @@ import { SiteLayout, PageHero, SectionHeading, CTABanner } from "@/components/Si
 import { img, IMG } from "@/lib/packages";
 import { meta } from "@/lib/meta";
 
-export const Route = createFileRoute("/about/")({
+export const Route = createFileRoute("/about")({
   head: () => meta("About Us — Kridonelly Safaris, Nairobi", "Meet the Nairobi-based team behind Kridonelly Safaris: our story, mission, expert guides and commitment to sustainable travel."),
   component: About,
 });

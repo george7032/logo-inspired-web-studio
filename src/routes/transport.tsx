@@ -6,7 +6,7 @@ import { img, IMG, waLink } from "@/lib/packages";
 import { meta } from "@/lib/meta";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-export const Route = createFileRoute("/transport/")({
+export const Route = createFileRoute("/transport")({
   head: () => meta("Airport Transfers, Safari Vehicle Hire & Tickets — Kridonelly Safaris", "Fixed-rate JKIA transfers, 4x4 Land Cruiser and safari van hire with driver-guides, plus flights, SGR and ferry tickets in Kenya."),
   component: Transport,
 });
