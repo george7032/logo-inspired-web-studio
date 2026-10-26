@@ -26,6 +26,11 @@ const staticPages = [
   { path: "/tours/nairobi-national-park-day-trip" },
   { path: "/tours/giraffe-centre-karen-day-tour" },
   { path: "/tours/7-day-kenya-grand-safari" },
+  { path: "/tours/7-day-group-safari-mara-nakuru-naivasha-amboseli" },
+  { path: "/tours/6-day-budget-group-safari-mara-nakuru-amboseli" },
+  { path: "/tours/5-day-group-safari-mara-nakuru-naivasha" },
+  { path: "/tours/4-day-group-safari-mara-nakuru" },
+  { path: "/tours/3-day-budget-group-safari-maasai-mara" },
   // Experience category pages
   { path: "/experiences/adventure" },
   { path: "/experiences/cultural" },
