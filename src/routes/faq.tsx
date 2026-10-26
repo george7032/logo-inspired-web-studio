@@ -4,7 +4,7 @@ import { img, IMG } from "@/lib/packages";
 import { meta } from "@/lib/meta";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-export const Route = createFileRoute("/faq")({
+export const Route = createFileRoute("/faq/")({
   head: () => meta("Safari FAQ — Kridonelly Safaris", "Answers about booking and payments, safaris, transport, health and safety, and cancellations for travel in Kenya."),
   component: Faq,
 });
@@ -29,7 +29,7 @@ function Faq() {
           </div>
         ))}
       </section>
-      <CTABanner title="Still have a question?" to="/contact" label="Contact us" />
+      <CTABanner title="Still have a question?" to="/contact/" label="Contact us" />
     </SiteLayout>
   );
 }

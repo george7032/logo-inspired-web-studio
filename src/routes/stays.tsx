@@ -6,7 +6,7 @@ import { img, IMG, waLink } from "@/lib/packages";
 import { meta } from "@/lib/meta";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
-export const Route = createFileRoute("/stays")({
+export const Route = createFileRoute("/stays/")({
   head: () => meta("Lodges, Camps & Hotels in Kenya — Kridonelly Safaris", "We book vetted luxury tented camps, boutique hotels, eco-lodges and full-board vacation rentals across Kenya at the best rates."),
   component: Stays,
 });
@@ -76,7 +76,7 @@ function Stays() {
           <SectionHeading eyebrow="All-inclusive" title="Full-board vacation packages" sub="One price covers your lodging, daily chef-curated meals and hand-picked local excursions, so you can simply relax." />
         </div>
       </section>
-      <CTABanner title="Let us book it for you: vetted properties, best rates." to="/contact" label="Contact us" />
+      <CTABanner title="Let us book it for you: vetted properties, best rates." to="/contact/" label="Contact us" />
     </SiteLayout>
   );
 }

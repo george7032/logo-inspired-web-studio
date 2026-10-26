@@ -9,10 +9,10 @@ const nav = [
   { to: "/", label: "Home" },
   { to: "/tours/", label: "Safaris & Tours" },
   { to: "/experiences/", label: "Experiences" },
-  { to: "/transport", label: "Transport" },
-  { to: "/stays", label: "Stays" },
-  { to: "/about", label: "About" },
-  { to: "/contact", label: "Contact" },
+  { to: "/transport/", label: "Transport" },
+  { to: "/stays/", label: "Stays" },
+  { to: "/about/", label: "About" },
+  { to: "/contact/", label: "Contact" },
 ] as const;
 
 export function SiteLayout({ children }: { children: ReactNode }) {
@@ -41,15 +41,15 @@ export function SiteLayout({ children }: { children: ReactNode }) {
             ))}
           </nav>
           <div className="flex items-center gap-2">
-            <Link to="/plan-my-trip" className="rounded-full bg-sunset px-4 py-2 text-sm font-semibold text-primary-foreground shadow">Plan My Trip</Link>
+            <Link to="/plan-my-trip/" className="rounded-full bg-sunset px-4 py-2 text-sm font-semibold text-primary-foreground shadow">Plan My Trip</Link>
             <button aria-label="Menu" onClick={() => setOpen(!open)} className="p-2 lg:hidden">{open ? <X /> : <Menu />}</button>
           </div>
         </div>
         {open && (
           <nav className="border-t border-border px-4 py-3 lg:hidden">
             {nav.map((n) => <Link key={n.to} to={n.to} onClick={() => setOpen(false)} className="block py-2 font-semibold">{n.label}</Link>)}
-            <Link to="/faq" onClick={() => setOpen(false)} className="block py-2 font-semibold">FAQ</Link>
-            <Link to="/support" onClick={() => setOpen(false)} className="block py-2 font-semibold">Travel Support</Link>
+            <Link to="/faq/" onClick={() => setOpen(false)} className="block py-2 font-semibold">FAQ</Link>
+            <Link to="/support/" onClick={() => setOpen(false)} className="block py-2 font-semibold">Travel Support</Link>
           </nav>
         )}
       </header>
@@ -67,15 +67,15 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           <div className="space-y-2 text-sm opacity-90">
             <p className="font-display text-base">Quick links</p>
             {nav.map((n) => <Link key={n.to} to={n.to} className="block hover:text-accent">{n.label}</Link>)}
-            <Link to="/faq" className="block hover:text-accent">FAQ</Link>
+            <Link to="/faq/" className="block hover:text-accent">FAQ</Link>
           </div>
           <div className="space-y-2 text-sm opacity-90">
             <p className="font-display text-base">Services</p>
             <Link to="/tours/" className="block hover:text-accent">Safaris & group departures</Link>
             <Link to="/experiences/" className="block hover:text-accent">Niche experiences</Link>
-            <Link to="/transport" className="block hover:text-accent">Airport transfers & vehicle hire</Link>
-            <Link to="/stays" className="block hover:text-accent">Lodge & hotel booking</Link>
-            <Link to="/support" className="block hover:text-accent">24/7 travel support</Link>
+            <Link to="/transport/" className="block hover:text-accent">Airport transfers & vehicle hire</Link>
+            <Link to="/stays/" className="block hover:text-accent">Lodge & hotel booking</Link>
+            <Link to="/support/" className="block hover:text-accent">24/7 travel support</Link>
           </div>
           <div className="space-y-2 text-sm opacity-90">
             <p className="font-display text-base">Contact</p>
@@ -139,7 +139,7 @@ export function Card({ title, text }: { title: string; text: string }) {
 
 export function PackageCard({ p }: { p: Pkg }) {
   return (
-    <Link to="/tours/$slug" params={{ slug: p.slug }} className="group overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+    <Link to="/tours/$slug/" params={{ slug: p.slug }} className="group overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
       <div className="relative aspect-[4/3] overflow-hidden">
         <img src={img(p.image, 700)} alt={p.title} loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
         {p.badge && <span className="absolute left-3 top-3 rounded-full bg-sunset px-3 py-1 text-xs font-bold text-primary-foreground">{p.badge}</span>}
@@ -159,7 +159,7 @@ export function PackageCard({ p }: { p: Pkg }) {
   );
 }
 
-export function CTABanner({ title, sub, to = "/plan-my-trip", label = "Plan My Trip" }: { title: string; sub?: string; to?: "/plan-my-trip" | "/contact"; label?: string }) {
+export function CTABanner({ title, sub, to = "/plan-my-trip/", label = "Plan My Trip" }: { title: string; sub?: string; to?: "/plan-my-trip/" | "/contact/"; label?: string }) {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16">
       <div className="rounded-3xl bg-sunset px-6 py-14 text-center text-primary-foreground shadow-xl">

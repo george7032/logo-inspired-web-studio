@@ -6,7 +6,7 @@ import { img, IMG, waLink, PHONE } from "@/lib/packages";
 import { meta } from "@/lib/meta";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-export const Route = createFileRoute("/support")({
+export const Route = createFileRoute("/support/")({
   head: () => meta("24/7 Travel Support & Kenya Travel Advice — Kridonelly Safaris", "Round-the-clock emergency support plus guides on Kenya entry requirements, health, packing, currency, tipping, M-Pesa and the best time to visit."),
   component: Support,
 });

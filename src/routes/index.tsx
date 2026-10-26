@@ -21,9 +21,9 @@ export const Route = createFileRoute("/")({
 const offers = [
   { icon: Compass, title: "Curated Tours & Packages", to: "/tours/" },
   { icon: Sparkles, title: "Specialized Travel", to: "/experiences/" },
-  { icon: Car, title: "Transport & Mobility", to: "/transport" },
-  { icon: BedDouble, title: "Hospitality & Stays", to: "/stays" },
-  { icon: Headphones, title: "Client Support", to: "/support" },
+  { icon: Car, title: "Transport & Mobility", to: "/transport/" },
+  { icon: BedDouble, title: "Hospitality & Stays", to: "/stays/" },
+  { icon: Headphones, title: "Client Support", to: "/support/" },
 ] as const;
 
 const why = [
@@ -34,10 +34,10 @@ const why = [
 ];
 
 const styles = [
-  { title: "Adventure", img: IMG.hike, to: "/experiences/adventure" },
-  { title: "Cultural", img: IMG.culture, to: "/experiences/cultural" },
-  { title: "Romantic", img: IMG.romance, to: "/experiences/romantic" },
-  { title: "Corporate", img: IMG.conference, to: "/experiences/corporate" },
+  { title: "Adventure", img: IMG.hike, to: "/experiences/adventure/" },
+  { title: "Cultural", img: IMG.culture, to: "/experiences/cultural/" },
+  { title: "Romantic", img: IMG.romance, to: "/experiences/romantic/" },
+  { title: "Corporate", img: IMG.conference, to: "/experiences/corporate/" },
   { title: "Family", img: IMG.family, to: "/tours/" },
 ];
 
@@ -57,13 +57,13 @@ function Index() {
           <p className="mt-6 max-w-xl text-lg opacity-90">Tailor-made safaris, group departures and seamless travel across Kenya & East Africa.</p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link to="/tours/" className="rounded-full bg-sunset px-6 py-3 font-semibold text-primary-foreground shadow-lg">Explore Safaris</Link>
-            <Link to="/plan-my-trip" className="rounded-full border border-primary-foreground/60 px-6 py-3 font-semibold hover:bg-primary-foreground/10">Plan My Trip</Link>
+            <Link to="/plan-my-trip/" className="rounded-full border border-primary-foreground/60 px-6 py-3 font-semibold hover:bg-primary-foreground/10">Plan My Trip</Link>
           </div>
         </div>
       </section>
 
       <section className="relative z-10 mx-auto -mt-12 max-w-6xl px-4">
-        <form onSubmit={(e) => { e.preventDefault(); navigate({ to: "/plan-my-trip" }); }} className="grid gap-3 rounded-2xl border border-border bg-card p-5 shadow-xl sm:grid-cols-2 lg:grid-cols-5">
+        <form onSubmit={(e) => { e.preventDefault(); navigate({ to: "/plan-my-trip/" }); }} className="grid gap-3 rounded-2xl border border-border bg-card p-5 shadow-xl sm:grid-cols-2 lg:grid-cols-5">
           {[
             ["Destination", <select key="d" className="w-full bg-transparent"><option>Maasai Mara</option><option>Amboseli</option><option>Samburu</option><option>Diani Beach</option><option>Mount Kenya</option></select>],
             ["Travel dates", <input key="t" type="date" className="w-full bg-transparent" />],

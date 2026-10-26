@@ -6,7 +6,7 @@ import { waLink } from "@/lib/packages";
 import { meta } from "@/lib/meta";
 import { Progress } from "@/components/ui/progress";
 
-export const Route = createFileRoute("/plan-my-trip")({
+export const Route = createFileRoute("/plan-my-trip/")({
   head: () => meta("Plan My Trip — Free Custom Safari Quote | Kridonelly Safaris", "Tell us about your dream Kenya trip in five quick steps and get a free, no-obligation custom itinerary within 24 hours."),
   component: Plan,
 });
