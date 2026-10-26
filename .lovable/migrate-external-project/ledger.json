@@ -6,7 +6,7 @@
     {"capability": "records", "source": "none in repo", "outcome": "not applicable", "status": "n/a", "next_action": ""},
     {"capability": "auth", "source": "none in repo", "outcome": "not applicable", "status": "n/a", "next_action": ""},
     {"capability": "storage", "source": "local assets (src/assets, public)", "outcome": "copied", "status": "done", "next_action": ""},
-    {"capability": "static export for cPanel", "source": "vite.config.ts prerender + trailingSlash", "outcome": "copied", "status": "pending", "next_action": "verify build produces dist/client"},
+    {"capability": "static export for cPanel", "source": "vite.config.ts prerender + trailingSlash", "outcome": "copied", "status": "verified", "next_action": ""},
     {"capability": "external providers", "source": "none detected", "outcome": "not applicable", "status": "n/a", "next_action": ""}
   ]
 }
