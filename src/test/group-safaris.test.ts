@@ -9,6 +9,10 @@ const newSlugs = [
   "5-day-group-safari-mara-nakuru-naivasha",
   "4-day-group-safari-mara-nakuru",
   "3-day-budget-group-safari-maasai-mara",
+  "private-day-tour-amboseli-national-park",
+  "overnight-safari-tsavo-east-from-malindi",
+  "private-overnight-safari-amboseli",
+  "7-day-luxury-lodge-safari-land-cruiser",
 ];
 
 const expectedPrices: Record<string, number> = {
@@ -17,6 +21,10 @@ const expectedPrices: Record<string, number> = {
   "5-day-group-safari-mara-nakuru-naivasha": 370,
   "4-day-group-safari-mara-nakuru": 280,
   "3-day-budget-group-safari-maasai-mara": 190,
+  "private-day-tour-amboseli-national-park": 500,
+  "overnight-safari-tsavo-east-from-malindi": 465,
+  "private-overnight-safari-amboseli": 340,
+  "7-day-luxury-lodge-safari-land-cruiser": 2480,
 };
 
 describe("group safaris from the client itinerary file", () => {
