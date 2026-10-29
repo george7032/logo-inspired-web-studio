@@ -13,6 +13,10 @@ const newSlugs = [
   "overnight-safari-tsavo-east-from-malindi",
   "private-overnight-safari-amboseli",
   "7-day-luxury-lodge-safari-land-cruiser",
+  "overnight-safari-tsavo-east-from-mombasa-diani-nairobi",
+  "3-day-private-masai-mara-migration-safari-land-cruiser",
+  "overnight-tour-hells-gate-lake-nakuru",
+  "5-day-safari-tsavo-west-amboseli-tsavo-east-from-mombasa",
 ];
 
 const expectedPrices: Record<string, number> = {
@@ -25,6 +29,10 @@ const expectedPrices: Record<string, number> = {
   "overnight-safari-tsavo-east-from-malindi": 465,
   "private-overnight-safari-amboseli": 340,
   "7-day-luxury-lodge-safari-land-cruiser": 2480,
+  "overnight-safari-tsavo-east-from-mombasa-diani-nairobi": 385,
+  "3-day-private-masai-mara-migration-safari-land-cruiser": 405,
+  "overnight-tour-hells-gate-lake-nakuru": 287,
+  "5-day-safari-tsavo-west-amboseli-tsavo-east-from-mombasa": 875,
 };
 
 describe("group safaris from the client itinerary file", () => {

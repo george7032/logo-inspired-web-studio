@@ -35,6 +35,10 @@ const staticPages = [
   { path: "/tours/overnight-safari-tsavo-east-from-malindi" },
   { path: "/tours/private-overnight-safari-amboseli" },
   { path: "/tours/7-day-luxury-lodge-safari-land-cruiser" },
+  { path: "/tours/overnight-safari-tsavo-east-from-mombasa-diani-nairobi" },
+  { path: "/tours/3-day-private-masai-mara-migration-safari-land-cruiser" },
+  { path: "/tours/overnight-tour-hells-gate-lake-nakuru" },
+  { path: "/tours/5-day-safari-tsavo-west-amboseli-tsavo-east-from-mombasa" },
   // Experience category pages
   { path: "/experiences/adventure" },
   { path: "/experiences/cultural" },
