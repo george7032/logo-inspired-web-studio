@@ -31,6 +31,10 @@ const staticPages = [
   { path: "/tours/5-day-group-safari-mara-nakuru-naivasha" },
   { path: "/tours/4-day-group-safari-mara-nakuru" },
   { path: "/tours/3-day-budget-group-safari-maasai-mara" },
+  { path: "/tours/private-day-tour-amboseli-national-park" },
+  { path: "/tours/overnight-safari-tsavo-east-from-malindi" },
+  { path: "/tours/private-overnight-safari-amboseli" },
+  { path: "/tours/7-day-luxury-lodge-safari-land-cruiser" },
   // Experience category pages
   { path: "/experiences/adventure" },
   { path: "/experiences/cultural" },
